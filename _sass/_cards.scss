@@ -1,0 +1,25 @@
+@import "colors";
+
+.card {
+  background-color: $grey-white;
+  padding: 16px;
+  margin: 16px 0 0;
+  border-radius: 8px;
+}
+
+.card p {
+  margin: 0;
+}
+
+.card--title {
+  font-weight: bold;
+}
+
+.card--description {
+  font-size: 16px;
+}
+
+.card--meta {
+  font-size: 16px;
+  color: $grey-dark;
+}

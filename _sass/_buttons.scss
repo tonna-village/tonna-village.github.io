@@ -1,0 +1,30 @@
+.btn {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 4px;
+  background-color: $grey-lightest;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: $grey-dark;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: $blue-lighter;
+  color: $blue-darker;
+  text-decoration: none;
+}
+
+.btn--light {
+  background-color: $grey-white;
+  color: $grey-dark;
+}
+
+.btn--pill {
+  border-radius: 20px;
+}

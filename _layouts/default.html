@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+  {% include header.html %}
+
+  {% include navigation.html %}
+
+  <main>
+    <div class="wrapper-inset">
+      {{ content }}
+    </div>
+  </main>
+
+  {% include footer.html %}
+
+  <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/buy-local.js" | prepend: site.baseurl }}"></script>
+
+</body>
+
+</html>
