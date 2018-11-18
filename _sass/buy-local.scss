@@ -1,6 +1,8 @@
+@import "colors";
+
 #buy-local {
   .list {
-    margin: 32px 0 16px;
+    margin: 56px 0 0px;
 
     li {
       margin: 0 8px 16px;
@@ -8,67 +10,38 @@
   }
 }
 
-ul.pill-nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  margin: 32px 0 8px;
-  padding: 0;
-}
-
-li.pill-nav-item {
-  display: inline-flex;
-  justify-content: center;
-  height: 40px;
-  margin: 0 8px 16px;
-  padding: 6px 16px 8px;
-  background-color: white;
-  border-radius: 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #757575;
-}
-
-ul.pill-nav a:hover {
-  text-decoration: none;
-}
-
-li.pill-nav-item:hover {
-  cursor: pointer;
-  background-color: #dbe9f9;
-  color: #212121;
-}
-
-li.pill-nav-item:active {
-  background-color: #b7d3f3;
-}
-
 .caption {
-  font-size: 14px;
-  color: #757575;
-  text-align: center;
-  margin-bottom: 40px;
+  font-size: 16px;
+  color: $grey-darker;
+  margin-top: 24px;
 }
 
 .business-list {
   list-style: none;
   margin: 0;
   padding: 0;
-}
 
-.business-list li {
-  margin-top: 16px;
-  padding: 16px 16px 0;
-  border-radius: 8px;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: baseline;
-  flex-wrap: wrap;
+  li {
+    margin-top: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .business-text {
+      flex: 1;
+
+      .business-title {
+      }
+
+      .business-description {
+      }
+    }
+  }
 }
 
 .business-list li.empty {
@@ -76,30 +49,40 @@ li.pill-nav-item:active {
   text-align: center;
   color: #757575;
   background-color: transparent;
-}
+  flex-direction: column;
+  align-items: center;
 
-.business-list .business-title {
-  flex-grow: 1;
+  a {
+    margin-top: 16px;
+  }
 }
 
 .business-list li a {
-  flex-grow: 0;
-  margin-left: 16px;
-  margin-bottom: 16px;
+  margin: 8px 0 8px 8px;
 }
 
-@media only screen and (max-width: 700px) {
-  .business-list li {
-    justify-content: flex-start;
+@media only screen and (max-width: 500px) {
+  .business-list li a span {
+    display: none;
   }
 
-  .business-list .business-title {
-    width: 100%;
-    margin-bottom: 16px;
-  }
-
-  .business-list li a {
-    margin-left: 0;
-    margin-right: 16px;
+  .business-list li:not(.empty) a::after {
+    content: "Call now"
   }
 }
+
+// @media only screen and (max-width: 700px) {
+//   .business-list li {
+//     justify-content: flex-start;
+//   }
+
+//   .business-list .business-title {
+//     width: 100%;
+//     margin-bottom: 16px;
+//   }
+
+//   .business-list li a {
+//     margin-left: 0;
+//     margin-right: 16px;
+//   }
+// }

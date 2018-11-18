@@ -4,36 +4,46 @@ header {
   padding: 96px 0 0;
   background-color: $grey-white;
   text-align: center;
+
+  .color-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background-color: $blue-light;
+  }
+
+  #title {
+    font-family: "Source Serif Pro", Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: $blue-dark;
+  }
+
+  #nav-open {
+    display: none;
+    position: absolute;
+    top: 28px;
+    right: 24px;
+  }
 }
 
-header .color-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 6px;
-  background-color: $blue-light;
-}
-
-header h1::after {
-  position: relative;
-  top: -4px;
-  margin-left: 8px;
-  padding: 4px 12px;
-  border-radius: 13px;
-  background-color: $red-dark;
-  color: $grey-white;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  content: "Beta";
-}
-
-header .icon {
-  display: none;
-  position: absolute;
-  top: 32px;
-  right: 32px;
-}
+//
+// BETA badge next to site title
+//
+// header h1::after {
+//   position: relative;
+//   top: -4px;
+//   margin-left: 8px;
+//   padding: 4px 12px;
+//   border-radius: 13px;
+//   background-color: $red-dark;
+//   color: $grey-white;
+//   font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+//   font-size: 14px;
+//   content: "Beta";
+// }
 
 @media only screen and (max-width: 700px) {
   header {
@@ -41,7 +51,7 @@ header .icon {
     text-align: left;
   }
 
-  header .icon {
-    display: block;
+  header #nav-open {
+    display: flex;
   }
 }

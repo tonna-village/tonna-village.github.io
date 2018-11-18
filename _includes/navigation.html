@@ -1,6 +1,9 @@
 <!-- <div class="nav {% if page.url == '/' %}disable-collapse{% endif %}"> -->
 <div class="nav">
-  <div id="nav-close">❌</div>
+  <div id="nav-close" class="btn-icon">
+    <!-- <span>Close</span> -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+  </div>
   <div class="wrapper">
     <ul class="list list--horizontal">
       <li>
@@ -8,25 +11,24 @@
           🏡 Home
         </a>
       </li>
+      <li>
+        <a href="{{ site.baseurl }}/buy-local" | prepend: site.baseUrl }}" class="btn btn--pill">
+          🛒 Buy Local
+        </a>
+      </li>
       <!-- <li>
         <a href="/notice-board" class="btn btn--pill">
           📌 Notice Board
         </a>
       </li> -->
-      <!--
-        <li>
-          <a href="#" target="_blank" class="btn btn--pill">
-            📖 Local History
-          </a> 
-        </li> -->
+      <!-- <li>
+        <a href="#" target="_blank" class="btn btn--pill">
+          📖 Local History
+        </a> 
+      </li> -->
       <li>
         <a href="https://www.npt.gov.uk/2195" target="_blank" class="btn btn--pill">
           ♻️ Bin Collections
-        </a>
-      </li>
-      <li>
-        <a href="https://bustimes.org/localities/tonna" target="_blank" class="btn btn--pill">
-          🚌 Bus Timetable
         </a>
       </li>
       <li>
@@ -35,8 +37,8 @@
         </a>
       </li>
       <li>
-        <a href="https://goo.gl/maps/bLQdaPr2K9R2" target="_blank" class="btn btn--pill">
-          🗺 Map
+        <a href="https://bustimes.org/localities/tonna" target="_blank" class="btn btn--pill">
+          🚌 Bus Timetable
         </a>
       </li>
       <li>
@@ -50,11 +52,6 @@
             📅 Events
           </a>
         </li> -->
-      <li>
-        <a href="{{ site.baseurl }}/buy-local" | prepend: site.baseUrl }}" class="btn btn--pill">
-          🛒 Buy Local
-        </a>
-      </li>
       <!--
         <li>
           <a href="#" target="_blank" class="btn btn--pill">
@@ -77,8 +74,23 @@
         </a>
       </li>
       <li>
+        <a href="http://tonna.rfc.wales/" target="_blank" class="btn btn--pill">
+          🏉 Tonna RFC
+        </a>
+      </li>
+      <li>
         <a href="http://www.tonnacommunitycouncil.com/" target="_blank" class="btn btn--pill">
           🏛 Community Council
+        </a>
+      </li>
+      <li>
+        <a href="https://goo.gl/maps/bLQdaPr2K9R2" target="_blank" class="btn btn--pill">
+          🗺 Map
+        </a>
+      </li>
+      <li>
+        <a href="https://goo.gl/forms/LZpjYEbhkGrWNx892" target="_blank" class="btn btn--pill">
+          ✉️ Contact us
         </a>
       </li>
     </ul>
