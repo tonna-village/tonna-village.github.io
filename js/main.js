@@ -13,7 +13,7 @@ $("#nav-close").on("click", function() {
 
 {% if jekyll.environment == 'production' %}
 // Track navigation events with Google Analytics
-$(".nav a").on("click", function(e) {
+$(".nav a").on("click", function() {
   const eventName = $(this).data("name");
   ga("send", {
     hitType: "event",
