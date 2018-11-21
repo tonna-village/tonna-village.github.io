@@ -11,3 +11,5 @@ Tonna (Welsh: Tonnau) is the name of a village and a coterminous electoral ward 
 Immediately between Tonna and the adjoining parish of Llanilltud ("Llantwit-juxta-Neath") is a cottage once occupied by the Welsh born engineer and naturalist Alfred Russel Wallace, who had arrived at his theory of evolution independently of Charles Darwin, with whom he later corresponded. Eventually Wallace and Darwin jointly presented the first paper on Natural Selection to the Linnean Society.
 
 The village's rugby union team is Tonna RFC.
+
+Source: [Wikipedia](https://en.wikipedia.org/wiki/Tonna,_Neath)

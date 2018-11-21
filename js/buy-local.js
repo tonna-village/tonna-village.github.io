@@ -220,7 +220,7 @@ const businesses = {
 
     if (businesses[listTitle].length < 1) {
       return list.html(
-        "<li class='empty'>🙄 Looks like there aren't any businesses in this section.<a href=''>Add a business</a></li>"
+        "<li class='empty'>🙄 Looks like there aren't any businesses in this section.<a href='https://goo.gl/forms/LB5rMuWbcO2bJopg1'>Add a business</a></li>"
       );
     }
 
