@@ -9,6 +9,7 @@ baseurl: ""
 url: "https://tonna-village.github.io"
 twitter_username: myguysi
 github_username:  myguysi
+google_analytics: UA-129564824-1
 
 # Build settings
 markdown: kramdown
